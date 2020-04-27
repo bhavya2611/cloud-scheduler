@@ -1,6 +1,6 @@
 {
-  "short_name": "BookApp",
-  "name": "Book App",
+  "short_name": "Cloud Scheduler",
+  "name": "Cloud Scheduler",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#004d40",
+  "theme_color": "#0b0c10",
   "background_color": "#ffffff"
 }

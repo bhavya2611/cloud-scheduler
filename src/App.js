@@ -1,24 +1,21 @@
-import React from 'react';
-// import BookContextProvider from './contexts/BookContext';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Dashboard from './components/Dashboard';
-import About from './components/About';
-import Contact from './components/Contact';
-import './App.css';
+import React from "react";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
+import SplashScreen from "./Screens/SplashScreen";
+import ScheduleScreen from "./Screens/ScheduleScreen";
+
+// 35.185.130.228
+// username: mehtabh
 
 const App = () => {
   return (
-    // <BookContextProvider>
-    <BrowserRouter>
-      <Navbar />
+    <Router>
       <Switch>
-        <Route exact path='/' component={Dashboard} />
-        <Route path='/about' component={About} />
-        <Route path='/contact' component={Contact} />
+        <Route exact path="/" component={SplashScreen} />
+        <Route exact path="/Schedule" component={ScheduleScreen} />
       </Switch>
-    </BrowserRouter>
-    // </BookContextProvider>
+    </Router>
   );
 };
 
